@@ -1,0 +1,125 @@
+/*********************
+GENERAL STYLES
+*********************/
+
+html{
+	
+}
+
+body {
+	font-family: $body-font;
+	color: $grey;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+a img{
+	border: none;
+}
+
+
+@mixin clearfix{
+	
+	&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+p{
+	line-height: 1.3;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited,
+.gen-link{
+	color: $link-color;
+	text-decoration: underline;
+	
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: $header-font;
+	text-rendering: optimizelegibility;	
+}
+
+h1, .h1 {
+	font-size: 1.4rem;
+}
+
+h2, .h2 {	
+	font-size: 1.3rem;
+}
+
+h3, .h3 {
+	font-size: 1.2rem;
+}
+
+h4, .h4 {
+	font-size: 1rem;
+}
+
+h5, .h5 {
+	font-size: 0.95rem;
+}
+
+
+
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+	
+	h1, .h1 {
+	font-size: 1.6rem;
+	}
+	
+	h2, .h2 {	
+		font-size: 1.4rem;
+	}
+	
+	h3, .h3 {
+		font-size: 1.3rem;
+	}
+	
+	h4, .h4 {
+		font-size: 1.2rem;
+	}
+	
+	h5, .h5 {
+		font-size: 1.1rem;
+	}
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

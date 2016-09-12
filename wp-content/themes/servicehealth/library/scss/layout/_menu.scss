@@ -1,0 +1,75 @@
+
+.main-menu{
+	display: none;
+}
+
+#toggle{
+	display: block;
+	cursor: pointer;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 1rem;
+	position: relative;
+	color: $lgrey;
+	float: right;
+}
+
+#toggle span:after,
+#toggle span:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+#toggle span:after{
+	top: 9px;
+}
+
+#toggle span{
+  position: absolute;
+  display: block;
+  top: 22px;
+  left: 9px;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 30px;
+  height: 5px;
+  background-color: lighten($bgrey, 20%);
+  backface-visibility: hidden;
+  @include border-radius(2px);
+}
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+	.main-menu{
+		display: block;
+	}
+	
+	#toggle{
+		display: none;
+	}
+	
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

@@ -1,0 +1,228 @@
+/*********************************************************************************
+Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
+*********************************************************************************/
+
+
+/* header */
+.page-header{
+	background: $lgrey;
+	padding: 1rem 0;
+	
+	.main-logo{
+		display: inline-block;
+		
+		img{
+			width: 3rem;
+			height: auto;
+		}
+	}
+}
+
+/* Menu */ 
+.main-menu{
+	
+	.menu{
+		background: darken($lgrey, 5%);
+		margin: 1rem 0 0 0;
+		padding: 0;
+		
+		li{
+			list-style-type: none;
+			
+			a{
+				display: block;
+				color: $text;
+				text-decoration: none;
+				padding: 0.5rem 1rem;
+				border-bottom: 1px solid $border;
+			}
+			
+			&:last-child a{
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+/* Article */
+
+article.hentry{
+	
+	.post-thumbnail{
+		display: block;
+		margin-top: 1rem;
+	}
+	
+	h1{
+		border-bottom: 1px solid $border;
+		margin: 1rem 0;
+		padding-bottom: 1rem;
+	}
+}
+
+
+/* Sidebar */
+
+#main-sidebar{
+	margin-top: 1rem;
+	
+	.searchform{
+		
+		input#s{
+			float: left;
+			border: none;
+			width: 70%;
+			@include border-radius(0);
+		}
+		
+		input#searchsubmit{
+			float: left;
+			width: 30%;
+			border: none;
+			padding: 0.8rem 0;
+			text-align: center;
+			color: $white;
+			background: lighten($bgrey, 20%);
+			@include border-radius(0);
+			@include transition();
+			
+			&:hover{
+				background: lighten($bgrey, 30%);
+			}
+		}
+		
+		@include clearfix;
+	}
+	
+	.widget{
+		background: $lgrey;
+		padding: 1rem;
+		margin-bottom: 1rem;
+		
+		h2{
+			border-bottom: 1px solid $border;
+			padding-bottom: 1rem;
+			line-height: 1;
+			margin: 0;
+		}	
+		
+		ul{
+			margin: 1rem 0 0 0;
+			padding: 0 0 0 1rem;
+		}
+	}
+}
+
+/* Archive & Search Results */
+
+.archive-title{
+	border-bottom: 1px solid $border;
+	padding-bottom: 1rem;
+}
+
+.archive-result{
+	background: $lgrey;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	
+	.result-title{
+		margin: 0;
+		border-bottom: 1px solid $border;
+		padding-bottom: 1rem;
+	}
+	
+	.vcard{
+		color: darken($lgrey, 20%);
+	}
+}
+
+/* Single */
+
+.single-title{
+	border-bottom: 1px solid $border;
+	padding-bottom: 1rem;
+}
+
+#comments{
+	border-bottom: 1px solid $border;
+	padding-bottom: 1rem
+}
+
+.commentlist{
+	
+	li{
+		background: $lgrey;
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+
+/* Footer */
+.page-footer{
+	background: $lgrey;
+	padding: 1rem 0;
+	
+	p{
+		margin: 0;
+	}
+}
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+	
+	
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+	.page-header{
+	
+		.main-logo{
+			float: left;
+			
+			img{
+				width: 4rem;
+			}
+		}
+	}
+	
+	.main-menu{
+	
+		.menu{
+			background: transparent;
+			float: right;
+			margin-top: 0;
+			
+			li{
+				display: inline-block;
+				
+				a{
+					padding: 1rem;
+					border-bottom: none;
+					display: block;
+					border-right: none;
+					color: $text;
+					
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			
+			@include clearfix;
+		}
+	}
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

@@ -1,0 +1,35 @@
+/******************************************************************
+Stylesheet: Forms
+******************************************************************/
+
+
+form{
+	
+	label{
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+	
+	input,
+	textarea{
+		border: 1px solid $border;
+		padding: 0.8rem;
+		font-family: $body-font;
+		@include border-radius(3px);
+	}
+	
+	#submit,
+	#searchsubmit{
+		border: none;
+		padding: 0.8rem 1.5rem;
+		font-family: $body-font;
+		color: $white;
+		background: lighten($bgrey, 20%);
+		@include border-radius(0);
+		@include transition();
+		
+		&:hover{
+			background: lighten($bgrey, 30%);
+		}
+	}
+}
