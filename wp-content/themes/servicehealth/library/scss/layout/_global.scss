@@ -8,13 +8,35 @@ html{
 
 body {
 	font-family: $body-font;
-	color: $grey;
+	color: $text;
 	-webkit-font-smoothing: antialiased;
 }
 
 img,
 a img{
 	border: none;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	background: $bg-light;
+	color: $white;
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	font-size: 0.8rem;
+	@include border-radius(5px);
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		padding: 0.8rem 1.8rem;
+		font-size: 1rem;
+	}
 }
 
 
@@ -24,6 +46,37 @@ a img{
 		content: '';
 		display: table;
 		clear: both;
+	}
+}
+
+@mixin border-below{
+	
+	position: relative;
+		
+	&:after{
+		content: '';
+		width: 80px;
+		height: 5px;
+		background: $accent;
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		margin-left: -40px;	
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		&:after{
+			width: 120px;	
+			margin-left: -60px;
+		}
+	}
+}
+
+.panel{
+	
+	.center{
+		text-align: center;
 	}
 }
 
@@ -41,6 +94,7 @@ p{
 LINK STYLES
 *********************/
 
+/*
 a, a:visited,
 .gen-link{
 	color: $link-color;
@@ -50,6 +104,7 @@ a, a:visited,
 		text-decoration: none;
 	}
 }
+*/
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -57,7 +112,8 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $header-font;
-	text-rendering: optimizelegibility;	
+	text-rendering: optimizelegibility;
+	font-weight: normal;
 }
 
 h1, .h1 {

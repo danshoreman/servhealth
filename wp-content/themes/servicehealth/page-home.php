@@ -5,26 +5,34 @@
 	</section>
 	
 	<section class="panel intro--panel">
-		<h2>Urgent. Business-critical.<br>
-		Really flipping important.</h2>
+		<div class="row">
+			<div class="small-12 columns">
+				<h2>Urgent. Business-critical.<br>
+					Really flipping important.</h2>
+			</div>
+		</div>
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
 				<img src="http://placehold.it/450x300" class="" alt="">
 			</div>
-			<div class="small-12 medium-6 columns">
-				<p>Whether it’s breaking news – or breaking servers – some messages are too important to be ignored.<br>
-					And yet somehow they are. 
-				</p>
-				
+			<div class="small-12 medium-6 columns text-col">
+				<p class="first">Whether it’s breaking news – or breaking servers – some messages are too important to be ignored.</p>
+				<p>And yet somehow they are.</p>
 			</div>
 		</div>
 		
-		<p>When everyone’s inbox has a mind-bogglingly high ‘unread message’ count, the humble email won’t cut it anymore. Messages get missed, people get miffed, and business grinds to a halt.</p>
+		<div class="row">
+			<div class="small-12 columns center">
 		
-		<h3>But there’s an answer! And it’s a clever one!</h3>
+				<p>When everyone’s inbox has a mind-bogglingly high ‘unread message’ count, the humble email won’t cut it anymore. Messages get missed, people get miffed, and business grinds to a halt.</p>
+				
+				<h3>But there’s an answer! And it’s a clever one!</h3>
 		
-		<div class="">
+			</div>
+		</div>
+		
+		<div class="panel panel-reasons">
 			<div class="row">
 				<div class="small-12 medium-4 columns">
 					<p>Service Health is a one-stop shop to send instant notifications to anyone in your business. Wherever they are, whatever platform they’re using.</p>
@@ -38,13 +46,19 @@
 			</div>
 		</div>
 		
-		<p>You get happier staff, your alerts actually get read, and nobody gets any nasty surprises.</p>
+		<div class="row">
+			<div class="small-12 columns center">
 		
-		<p>Click play below to see how Service Health can save you time, money and sweet, sweet sanity.</p>
+				<p>You get happier staff, your alerts actually get read, and nobody gets any nasty surprises.</p>
+				
+				<p>Click play below to see how Service Health can save you time, money and sweet, sweet sanity.</p>
+				
+				<a href="" class="btn btn--pricing">View pricing</a>
+				
+				<a href="" class="btn btn--video">Watch the video</a>
 		
-		<a href="" class="btn btn--pricing">View pricing</a>
-		
-		<a href="" class="btn btn--video">Watch the video</a>
+			</div>
+		</div>
 			
 		</div>
 		
@@ -55,7 +69,7 @@
 	</section>
 	
 	<section class="panel panel--features">
-		<header class="panel-header">
+		<header class="panel-header center">
 			<h3>The Things you’ll love</h3>
 			<p>As if reducing service desk calls and giving you the time to actually fix the issue wasn’t enough...</p>
 		</header>

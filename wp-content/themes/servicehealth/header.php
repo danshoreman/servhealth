@@ -25,6 +25,9 @@
 
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+<script src="https://use.typekit.net/crm4rqd.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/min/rem.min.js"></script>
@@ -43,7 +46,7 @@
 	<header class="page-header">
 		<div class="row">
 			<div class="small-12 columns">
-				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/logo.png" alt=""></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"></a>
 				<div id="toggle"><span></span></div>
 				<?php wp_nav_menu( array( 'menu' => 'Main Navigation', 'container_class' => 'main-menu' ) ); ?>
 			</div>

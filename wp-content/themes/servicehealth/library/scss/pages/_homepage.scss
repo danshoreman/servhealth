@@ -1,7 +1,114 @@
 
+.panel{
+	
+}
 
+.intro--panel{
+	
+	h2, h3{
+		text-align: center;
+		font-size: 1rem;
+		margin-bottom: 40px;
+		@include border-below;
+	}
+	
+	p{
+		font-size: 1.2rem;
+	}
+	
+	@media only screen and (min-width: 40.063em) {
+		
+		h2, h3{
+			font-size: 1.2rem;
+			margin-bottom: 40px;
+		}
+		
+		p{
+			font-size: 1.3rem;
+			
+			&.first{
+				margin-top: 2em;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		h2{
+			font-size: 1.4rem;
+			margin-top: 2em;
+			margin-bottom: 70px;
+		}
+		
+		h3{
+			margin-top: 2em;
+		}
+		
+		p{
+			font-size: 1.3rem;
+		}
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		
+		p{
+			margin-left: 1em;
+			margin-right: 2em; 	
+			
+			&.first{
+				margin-top: 4em;
+			}
+		}
+	}
+	
+	.panel-reasons{
+		background: $bg-light;
+	}
+	
+	.btn{
+		margin-bottom: 2.5rem;
+		
+		&.btn--pricing{
+			background: $alert-sec;
+		}
+		
+		&.btn--video{
+			background: $accent;
+		}
+	}
+}
 
+.panel--full--width{
+	background: url(../images/general/laptop-sm.jpg) center center no-repeat $bg-light;
+	@include back-size(cover);
+	width: 100%;
+	height: 210px;
+	
+	@media only screen and (min-width: 48.063em) {
+		background: url(../images/general/laptop.jpg) center center no-repeat $bg-light;
+		@include back-size(cover);
+		height: 350px;
+	}
+	
+	@media only screen and (min-width: 64.063em) {
+		height: 500px;
+	}
+	
+	@media only screen and (min-width: 90.063em) {
+		height: 550px;
+	}
+}
 
+.panel--features{
+	
+	.panel-header{
+		
+		h3{
+			@include border-below();
+			margin-bottom: 40px;
+		}
+	}
+}
 
 
 /* min-width 641px */

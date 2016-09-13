@@ -56,7 +56,7 @@ form input,
 form textarea {
   border: 1px solid #c7c7c7;
   padding: 0.8rem;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -66,7 +66,7 @@ form #submit,
 form #searchsubmit {
   border: none;
   padding: 0.8rem 1.5rem;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   background: #8299a9;
   -webkit-border-radius: 0;
@@ -1235,14 +1235,43 @@ select {
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #343434;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #292b2c;
   -webkit-font-smoothing: antialiased;
 }
 
 img,
 a img {
   border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  background: #eff1f2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+.panel .center {
+  text-align: center;
 }
 
 /*********************
@@ -1255,23 +1284,24 @@ p {
 /*********************
 LINK STYLES
 *********************/
+/*
 a, a:visited,
-.gen-link {
-  color: #40859b;
-  text-decoration: underline;
+.gen-link{
+	color: $link-color;
+	text-decoration: underline;
+	
+	&:hover{
+		text-decoration: none;
+	}
 }
-
-a:hover, a:visited:hover,
-.gen-link:hover {
-  text-decoration: none;
-}
-
+*/
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "azo-sans-uber", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
+  font-weight: normal;
 }
 
 h1, .h1 {
@@ -1697,7 +1727,148 @@ h5, .h5 {
   }
 }
 
-/* Base stuff here */
+.intro--panel h2, .intro--panel h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.intro--panel h2:after, .intro--panel h3:after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: #41e3aa;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .intro--panel h2:after, .intro--panel h3:after {
+    width: 120px;
+    margin-left: -60px;
+  }
+}
+
+.intro--panel p {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .intro--panel h2, .intro--panel h3 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .intro--panel p {
+    font-size: 1.3rem;
+  }
+  .intro--panel p.first {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .intro--panel h2 {
+    font-size: 1.4rem;
+    margin-top: 2em;
+    margin-bottom: 70px;
+  }
+  .intro--panel h3 {
+    margin-top: 2em;
+  }
+  .intro--panel p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .intro--panel p {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+  .intro--panel p.first {
+    margin-top: 4em;
+  }
+}
+
+.intro--panel .panel-reasons {
+  background: #eff1f2;
+}
+
+.intro--panel .btn {
+  margin-bottom: 2.5rem;
+}
+
+.intro--panel .btn.btn--pricing {
+  background: #1e7dad;
+}
+
+.intro--panel .btn.btn--video {
+  background: #41e3aa;
+}
+
+.panel--full--width {
+  background: url(../images/general/laptop-sm.jpg) center center no-repeat #eff1f2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 210px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--full--width {
+    background: url(../images/general/laptop.jpg) center center no-repeat #eff1f2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .panel--full--width {
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 90.063em) {
+  .panel--full--width {
+    height: 550px;
+  }
+}
+
+.panel--features .panel-header h3 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.panel--features .panel-header h3:after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: #41e3aa;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--features .panel-header h3:after {
+    width: 120px;
+    margin-left: -60px;
+  }
+}
+
+/* min-width 641px */
+/* min-width 769px */
+/* min-width 1025px */
+/* min-width 1441px */
 /*********************************************************************************
 Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 *********************************************************************************/
@@ -1729,7 +1900,7 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 
 .main-menu .menu li a {
   display: block;
-  color: #484848;
+  color: #292b2c;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #c7c7c7;
@@ -1882,7 +2053,7 @@ article.hentry h1 {
     border-bottom: none;
     display: block;
     border-right: none;
-    color: #484848;
+    color: #292b2c;
   }
   .main-menu .menu li a:hover {
     text-decoration: underline;
