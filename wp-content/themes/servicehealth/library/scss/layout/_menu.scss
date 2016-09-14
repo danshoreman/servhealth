@@ -39,9 +39,8 @@
 #toggle span:before {
   width: 30px;
   height: 5px;
-  background-color: lighten($bgrey, 20%);
+  background-color: $white;
   backface-visibility: hidden;
-  @include border-radius(2px);
 }
 
 

@@ -46,7 +46,7 @@
 	<header class="page-header">
 		<div class="row">
 			<div class="small-12 columns">
-				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow" class="main-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/service-health-logo.png" class="" alt=""></a>
 				<div id="toggle"><span></span></div>
 				<?php wp_nav_menu( array( 'menu' => 'Main Navigation', 'container_class' => 'main-menu' ) ); ?>
 			</div>

@@ -1,10 +1,18 @@
 <?php get_header(); ?>
 
 	<section class="panel hero--panel">
-		
+		<div class="row">
+			<div class="small-12 columns">
+				<h1>The smart way to keep your staff in the loop</h1>
+				<p>Get instant attention with quick, easy alerting for desktop and mobile.</p>
+				
+				<a href="#more" class="btn-more">Find Out More</a>
+			</div>
+		</div>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/angle.png" class="angle" alt="">
 	</section>
 	
-	<section class="panel intro--panel">
+	<section id="more" class="panel intro--panel">
 		<div class="row">
 			<div class="small-12 columns">
 				<h2>Urgent. Business-critical.<br>
@@ -53,7 +61,7 @@
 				
 				<p>Click play below to see how Service Health can save you time, money and sweet, sweet sanity.</p>
 				
-				<a href="" class="btn btn--pricing">View pricing</a>
+				<a href="#pricing" class="btn btn--pricing">View pricing</a>
 				
 				<!--<a href="" class="btn btn--video">Watch the video</a>-->
 		
@@ -68,7 +76,7 @@
 		
 	</section>
 	
-	<section class="panel panel--features">
+	<section id="features" class="panel panel--features">
 		<header class="panel-header center">
 			<h3>The Things you’ll love</h3>
 			<p>As if reducing service desk calls and giving you the time to actually fix the issue wasn’t enough...</p>
@@ -159,7 +167,7 @@
 		</div>
 	</section>
 	-->
-	<section class="panel panel--pricing">
+	<section id="pricing" class="panel panel--pricing">
 		<h4 class="center">Pricing</h4>
 		
 		<div class="row">
@@ -174,7 +182,7 @@
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
-					<a href="" class="btn btn-pricing">Enquire Now</a>
+					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Free Trial Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
 			<div class="small-12 medium-6 large-3 columns">
@@ -187,7 +195,7 @@
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
-					<a href="" class="btn btn-pricing">Enquire Now</a>
+					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Team Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
 			<div class="small-12 medium-6 large-3 columns">
@@ -200,7 +208,7 @@
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
-					<a href="" class="btn btn-pricing">Enquire Now</a>
+					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Business Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
 			<div class="small-12 medium-6 large-3 columns">
@@ -213,9 +221,18 @@
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
-					<a href="" class="btn btn-pricing">Enquire Now</a>
+					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Enterprise Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="panel panel--contact">
+		<div class="row">
+			<div class="small-12 columns">
+				<h3 class="center">Contact Us</h3>
+				<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
 			</div>
 		</div>
 	</section>

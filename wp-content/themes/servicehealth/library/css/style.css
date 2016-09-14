@@ -1386,11 +1386,8 @@ h5, .h5 {
 #toggle span:before {
   width: 30px;
   height: 5px;
-  background-color: #8299a9;
+  background-color: #ffffff;
   backface-visibility: hidden;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
 }
 
 /* min-width 641px */
@@ -1727,6 +1724,130 @@ h5, .h5 {
   }
 }
 
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #a0f1d5;
+  background-color: rgba(65, 227, 170, 0.5);
+}
+
+.page-header .main-logo img {
+  width: 80px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .page-header .main-logo {
+    margin-left: 2rem;
+  }
+  .page-header .main-logo img {
+    width: 100px;
+  }
+}
+
+.hero--panel {
+  height: 350px;
+  width: 100%;
+  background: url(../images/general/hero-image.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.hero--panel h1 {
+  font-family: "azo-sans-uber", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  margin: 6rem 0 0 0;
+  max-width: 200px;
+  line-height: 1;
+  font-size: 1.6rem;
+}
+
+.hero--panel p {
+  color: #ffffff;
+  margin: 1rem 0;
+  max-width: 200px;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.hero--panel .btn-more {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.hero--panel .angle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .hero--panel {
+    height: 380px;
+  }
+  .hero--panel h1 {
+    max-width: 300px;
+    font-size: 2.2rem;
+  }
+  .hero--panel p {
+    max-width: 280px;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .hero--panel {
+    height: 550px;
+  }
+  .hero--panel h1 {
+    max-width: 380px;
+    font-size: 2.8rem;
+    margin-top: 9rem;
+    margin-left: 2rem;
+  }
+  .hero--panel p {
+    max-width: 330px;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  }
+  .hero--panel .btn-more {
+    background: url(../images/general/down-arrow.png) center bottom no-repeat;
+    margin-left: 2rem;
+    height: 75px;
+    display: inline-block;
+    background-size: 40px;
+  }
+  .hero--panel .angle {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .hero--panel {
+    height: 650px;
+  }
+  .hero--panel h1 {
+    max-width: 460px;
+    font-size: 3.4rem;
+  }
+  .hero--panel p {
+    max-width: 330px;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  .hero--panel .btn-more {
+    font-size: 1.4rem;
+    background-size: 50px;
+    height: 95px;
+  }
+}
+
 .intro--panel h2, .intro--panel h3 {
   text-align: center;
   font-size: 1rem;
@@ -1772,7 +1893,7 @@ h5, .h5 {
 @media only screen and (min-width: 48.063em) {
   .intro--panel h2 {
     font-size: 1.4rem;
-    margin-top: 2em;
+    margin-top: 0;
     margin-bottom: 70px;
   }
   .intro--panel h3 {
@@ -2029,6 +2150,31 @@ h5, .h5 {
   }
 }
 
+.panel--contact .gform_wrapper {
+  width: 100%;
+}
+
+.panel--contact .gform_wrapper .gform_body {
+  width: 100%;
+}
+
+.panel--contact .gform_wrapper .gform_footer .gform_button {
+  background: #41e3aa;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .panel--contact .gform_wrapper .gform_body .gform_fields {
+    /*
+#field_1_1,
+					#field_1_2{
+						width: 50%;
+					}
+*/
+  }
+}
+
 /* min-width 641px */
 /* min-width 769px */
 /* min-width 1025px */
@@ -2038,7 +2184,6 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 *********************************************************************************/
 /* header */
 .page-header {
-  background: #f5f5f5;
   padding: 1rem 0;
 }
 
@@ -2046,14 +2191,9 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
   display: inline-block;
 }
 
-.page-header .main-logo img {
-  width: 3rem;
-  height: auto;
-}
-
 /* Menu */
 .main-menu .menu {
-  background: #e8e8e8;
+  background: #ffffff;
   margin: 1rem 0 0 0;
   padding: 0;
 }
@@ -2067,7 +2207,7 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
   color: #292b2c;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #c7c7c7;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-menu .menu li:last-child a {
@@ -2201,9 +2341,6 @@ article.hentry h1 {
   .page-header .main-logo {
     float: left;
   }
-  .page-header .main-logo img {
-    width: 4rem;
-  }
   .main-menu .menu {
     background: transparent;
     float: right;
@@ -2217,7 +2354,9 @@ article.hentry h1 {
     border-bottom: none;
     display: block;
     border-right: none;
-    color: #292b2c;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   .main-menu .menu li a:hover {
     text-decoration: underline;

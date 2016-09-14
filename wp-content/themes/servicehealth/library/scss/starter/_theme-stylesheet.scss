@@ -5,16 +5,10 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 
 /* header */
 .page-header{
-	background: $lgrey;
 	padding: 1rem 0;
 	
 	.main-logo{
 		display: inline-block;
-		
-		img{
-			width: 3rem;
-			height: auto;
-		}
 	}
 }
 
@@ -22,7 +16,7 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 .main-menu{
 	
 	.menu{
-		background: darken($lgrey, 5%);
+		background: $white;
 		margin: 1rem 0 0 0;
 		padding: 0;
 		
@@ -34,7 +28,7 @@ Stylesheet: Theme Stylesheet - REMOVE THIS FILE BEFORE GOING TO PRODUCTION
 				color: $text;
 				text-decoration: none;
 				padding: 0.5rem 1rem;
-				border-bottom: 1px solid $border;
+				border-bottom: 1px solid darken($white, 10%);
 			}
 			
 			&:last-child a{
@@ -182,10 +176,6 @@ article.hentry{
 	
 		.main-logo{
 			float: left;
-			
-			img{
-				width: 4rem;
-			}
 		}
 	}
 	
@@ -204,7 +194,9 @@ article.hentry{
 					border-bottom: none;
 					display: block;
 					border-right: none;
-					color: $text;
+					color: $white;
+					text-transform: uppercase;
+					font-weight: 700;
 					
 					&:hover{
 						text-decoration: underline;
