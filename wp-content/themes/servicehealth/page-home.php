@@ -55,7 +55,7 @@
 				
 				<a href="" class="btn btn--pricing">View pricing</a>
 				
-				<a href="" class="btn btn--video">Watch the video</a>
+				<!--<a href="" class="btn btn--video">Watch the video</a>-->
 		
 			</div>
 		</div>
@@ -162,25 +162,28 @@
 	</section>
 	
 	<section class="panel panel--pricing">
-		<h4>Pricing</h4>
+		<h4 class="center">Pricing</h4>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns">
-				<div class="block block--pricing">
+			<div class="small-12 medium-6 large-3 columns">
+				
+				<div class="block block--pricing block--pricing--free">
 					<h6>Free Trial</h6>
 					
-					<p>Up to 3 users<br> + Creator Licence</p>
+					<p><strong>Up to 3 users<br> + Creator Licence</strong></p>
 					
-					<p>Free – 10 email and 10 SMS<br>text messages.</p>
+					<p><strong>Free</strong> – 10 email and 10 SMS text messages.</p>
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
 					<a href="" class="btn btn-pricing">Enquire Now</a>
 				</div>
-				<div class="block block--pricing">
+			</div>
+			<div class="small-12 medium-6 large-3 columns">
+				<div class="block block--pricing block--pricing--team">
 					<h6>Team</h6>
 					
-					<p>Up to 50 users<br> + Creator Licence</p>
+					<p><strong>Up to 50 users<br> + Creator Licence</strong></p>
 					
 					<p>£2.00 Per Seat Per Month – Text, SMS + Windows Pop Up.<br></p>
 					
@@ -188,28 +191,33 @@
 					
 					<a href="" class="btn btn-pricing">Enquire Now</a>
 				</div>
-				<div class="block block--pricing">
+			</div>
+			<div class="small-12 medium-6 large-3 columns">
+				<div class="block block--pricing block--pricing--business">
 					<h6>Business</h6>
 					
-					<p>Up to 3 users<br> + Creator Licence</p>
+					<p><strong>51 to 999 users<br> + Creator Licence</strong></p>
 					
-					<p>Licence - £1.50 Per Seat Per Month<br>Text, SMS + Windows Pop Up.</p>
+					<p>£1.50 Per Seat Per Month<br>Text, SMS + Windows Pop Up.</p>
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
 					<a href="" class="btn btn-pricing">Enquire Now</a>
 				</div>
-				<div class="block block--pricing">
+			</div>
+			<div class="small-12 medium-6 large-3 columns">
+				<div class="block block--pricing block--pricing--enterprise">
 					<h6>Enterprise</h6>
 					
-					<p>Up to 3 users<br> + Creator Licence</p>
+					<p><strong>1000 upwards<br> + Creator Licence</strong></p>
 					
-					<p>Free – 10 email and 10 SMS<br>text messages.</p>
+					<p>£1.25 Per User<br>Text, SMS + Windows Pop Up.</p>
 					
 					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
 					<a href="" class="btn btn-pricing">Enquire Now</a>
 				</div>
+			</div>
 			</div>
 		</div>
 	</section>

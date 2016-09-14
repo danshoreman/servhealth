@@ -1865,6 +1865,61 @@ h5, .h5 {
   }
 }
 
+.panel--examples {
+  background: #41e3aa;
+}
+
+.panel--pricing .block {
+  background: #eff1f2;
+}
+
+.panel--pricing .block.block--pricing {
+  min-height: 400px;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.panel--pricing .block.block--pricing.block--pricing--free {
+  border-top: 10px solid #edf34f;
+}
+
+.panel--pricing .block.block--pricing.block--pricing--team {
+  border-top: 10px solid #41e3aa;
+}
+
+.panel--pricing .block.block--pricing.block--pricing--business {
+  border-top: 10px solid #e76fbb;
+}
+
+.panel--pricing .block.block--pricing.block--pricing--enterprise {
+  border-top: 10px solid #6fc9e7;
+}
+
+.panel--pricing .block.block--pricing h6 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.panel--pricing .block.block--pricing p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.panel--pricing .block.block--pricing .btn-pricing {
+  background: #41e3aa;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--pricing .block.block--pricing {
+    min-height: 415px;
+    padding: 0.5rem;
+  }
+  .panel--pricing .block.block--pricing p {
+    font-size: 1.1rem;
+  }
+}
+
 /* min-width 641px */
 /* min-width 769px */
 /* min-width 1025px */

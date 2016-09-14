@@ -107,6 +107,67 @@
 			@include border-below();
 			margin-bottom: 40px;
 		}
+		
+		p{
+			
+		}
+	}
+}
+
+.panel--examples{
+	background: $accent;
+}
+
+.panel--pricing{
+	
+	.block{
+		background: $bg-light;
+		
+		&.block--pricing{
+			min-height: 400px;
+			margin-bottom: 1rem;
+			text-align: center;
+			padding: 1rem 2rem;
+			
+			&.block--pricing--free{
+				border-top: 10px solid #edf34f;
+			}
+			&.block--pricing--team{
+				border-top: 10px solid $accent;
+			}
+			&.block--pricing--business{
+				border-top: 10px solid #e76fbb;
+			}
+			&.block--pricing--enterprise{
+				border-top: 10px solid #6fc9e7;
+			}
+			
+			h6{
+				font-size: 1.8rem;
+				margin: 1rem 0;
+			}
+			
+			p{
+				font-size: 1.2rem;
+				margin-top: 0;
+			}
+			
+			.btn-pricing{
+				background: $accent;
+			}
+		}
+		
+		@media only screen and (min-width: 48.063em) {
+			
+			&.block--pricing{
+				min-height: 415px;
+				padding: 0.5rem;
+				
+				p{
+					font-size: 1.1rem;
+				}
+			}
+		}
 	}
 }
 
