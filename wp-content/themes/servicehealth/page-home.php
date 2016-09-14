@@ -17,7 +17,7 @@
 				<img src="http://placehold.it/450x300" class="" alt="">
 			</div>
 			<div class="small-12 medium-6 columns text-col">
-				<p class="first">Whether it’s breaking news – or breaking servers – some messages are too important to be ignored.</p>
+				<p class="first">When the systems that run the business run into trouble, people need to know about it. It's something that's just too important to be ignored.</p>
 				<p>And yet somehow they are.</p>
 			</div>
 		</div>
@@ -35,13 +35,13 @@
 		<div class="panel panel-reasons">
 			<div class="row">
 				<div class="small-12 medium-4 columns">
-					<p>Service Health is a one-stop shop to send instant notifications to anyone in your business. Wherever they are, whatever platform they’re using.</p>
+					<p class="reason reason1">Service Health is a one-stop shop to send instant notifications to anyone in your business. Wherever they are, whatever platform they’re using.</p>
 				</div>	
 				<div class="small-12 medium-4 columns">
-					<p>In fact, you can even let them choose how they’d like to be notified, and which notifications are relevant to them.</p>
+					<p class="reason reason2">In fact, you can even let people choose how they’d like to be notified, and which notifications are relevant to them.</p>
 				</div>
 				<div class="small-12 medium-4 columns">
-					<p>So if Joan from HR is going to be on the road on Thursday, she can choose to get useful HR alerts straight to her mobile. It’s democracy in action.</p>
+					<p class="reason reason3">So if Joan from HR is going to be on the road on Thursday, she can choose to get useful HR alerts straight to her mobile. It’s democracy in action.</p>
 				</div>		
 			</div>
 		</div>
@@ -75,10 +75,10 @@
 		</header>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-push-6 columns">
 				<img src="http://placehold.it/450x300" class="" alt="">
 			</div>
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">
 					<h4>It’s in the cloud – and at your fingertips</h4>
 					<p>Your real-time dashboard is only ever a click away. You can check on services 24/7 and see how your communication’s performing with notification tracking. It’s seriously easy</p>
@@ -88,21 +88,21 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
+				<img src="http://placehold.it/450x300" class="" alt="">
+			</div>
+			<div class="small-12 medium-6 columns">
 				<div class="block feature--block">
 					<h4>Location-specific alerting? Oh yes</h4>
 					<p>However many sites you have – and wherever they are in the world – you can send targeted alerts by location. Service Health gets attention like a foghorn, but it’s accurate like a scalpel.</p>
 				</div>
 			</div>
-			<div class="small-12 medium-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
-			</div>
 		</div>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-push-6 columns">
 				<img src="http://placehold.it/450x300" class="" alt="">
 			</div>
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">
 					<h4>A problem shared is a problem halved</h4>
 					<p>When your users are kept in the dark they panic. People get distracted, annoyed, and they take up valuable IT time by reporting issues. For the thousandth time. A quick alert from Service Health minimises confusion, downtime and cost to the business.</p>
@@ -112,32 +112,30 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
+				<img src="http://placehold.it/450x300" class="" alt="">
+			</div>
+			<div class="small-12 medium-6 columns">
 				<div class="block feature--block">
 					<h4>It’s on your users’ terms</h4>
 					<p>Since users choose when and where they receive alerts, they’ll actually be heard. If email’s not good for someone, or they’d like to get SMS alerts after business hours, the choice is in their hands. Or on their desktops. Or both, if you’re the belt-and-braces type.</p>
 				</div>
 			</div>
-			<div class="small-12 medium-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
-			</div>
 		</div>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-push-6 columns">
 				<img src="http://placehold.it/450x300" class="" alt="">
 			</div>
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">
-					<h4>It’s not just for the techie types</h4>
-					<p>Whether it’s HR updates, a staff newsletter, or giving someone a good old pat on the back for a job well done, Service Health lets people know.<br><br>
-
- People are already coming up with uses we never imagined, and they’re making their businesses a better place to be.</p>
+					<h4>You'll see a lot of smiling faces</h4>
+					<p>Business support teams have an uphill struggle to keep everyone happy. Keeping your internal customers in the loop about outages and issues that affect them make their lives much easier.</p>
 				</div>
 			</div>
 		</div>
 		
 	</section>
-	
+	<!--
 	<section class="panel panel--examples">
 		<div class="row">
 			<div class="small-12 columns">
@@ -160,7 +158,7 @@
 			</div>
 		</div>
 	</section>
-	
+	-->
 	<section class="panel panel--pricing">
 		<h4 class="center">Pricing</h4>
 		

@@ -1797,6 +1797,47 @@ h5, .h5 {
   background: #eff1f2;
 }
 
+.intro--panel .panel-reasons .reason {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.intro--panel .panel-reasons .reason.reason1:after {
+  content: '1';
+  font-family: "azo-sans-uber", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.intro--panel .panel-reasons .reason.reason2:after {
+  content: '2';
+  font-family: "azo-sans-uber", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.intro--panel .panel-reasons .reason.reason3:after {
+  content: '3';
+  font-family: "azo-sans-uber", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .intro--panel .panel-reasons {
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .intro--panel .panel-reasons {
+    padding: 2rem 0;
+  }
+}
+
 .intro--panel .btn {
   margin-bottom: 2.5rem;
 }
@@ -1865,6 +1906,67 @@ h5, .h5 {
   }
 }
 
+.panel--features .feature--block h4 {
+  font-size: 1rem;
+  padding-right: 30%;
+  position: relative;
+}
+
+.panel--features .feature--block h4:after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: #41e3aa;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--features .feature--block h4:after {
+    width: 120px;
+    margin-left: -60px;
+  }
+}
+
+.panel--features .feature--block h4:after {
+  bottom: -12px;
+  left: 0;
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .panel--features .panel-header p {
+    font-size: 1.2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .panel--features .feature--block {
+    padding-left: 1rem;
+  }
+  .panel--features .feature--block h4 {
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--features .panel-header {
+    padding: 2rem 0;
+  }
+  .panel--features .feature--block {
+    padding-left: 1rem;
+  }
+  .panel--features .feature--block h4 {
+    font-size: 1.4rem;
+    padding-right: 20%;
+  }
+  .panel--features .feature--block p {
+    font-size: 1.2rem;
+  }
+}
+
 .panel--examples {
   background: #41e3aa;
 }
@@ -1917,6 +2019,13 @@ h5, .h5 {
   }
   .panel--pricing .block.block--pricing p {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 48.063em) {
+  .panel--pricing h4 {
+    font-size: 1.4rem;
+    padding: 1rem 0;
   }
 }
 

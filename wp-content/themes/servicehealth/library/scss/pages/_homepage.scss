@@ -63,6 +63,54 @@
 	
 	.panel-reasons{
 		background: $bg-light;
+		
+		.reason{
+			position: relative;
+			padding-left: 1.5rem;
+			
+			&.reason1{
+				
+				&:after{
+					content: '1';
+					font-family: $header-font;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}	
+			}
+			
+			&.reason2{
+				
+				&:after{
+					content: '2';
+					font-family: $header-font;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+			
+			&.reason3{
+				
+				&:after{
+					content: '3';
+					font-family: $header-font;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+		
+		@media only screen and (min-width: 40.063em) {
+			
+			padding: 1rem 0;	
+		}
+		
+		@media only screen and (min-width: 48.063em) {
+			
+			padding: 2rem 0;	
+		}
 	}
 	
 	.btn{
@@ -104,12 +152,68 @@
 	.panel-header{
 		
 		h3{
-			@include border-below();
+			@include border-below;
 			margin-bottom: 40px;
 		}
 		
 		p{
 			
+		}
+	}
+	
+	.feature--block{
+		
+		h4{
+			font-size: 1rem;
+			padding-right: 30%;
+			@include border-below;
+			
+			&:after{
+				bottom: -12px;
+		    left: 0;
+		    margin-left: 0;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 40.063em) {
+		
+		.panel-header{
+		
+			p{
+				font-size: 1.2rem;
+				max-width: 480px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		
+		.feature--block{
+			padding-left: 1rem;
+			
+			h4{
+				padding-right: 10%;
+			}	
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+		
+		.panel-header{
+			padding: 2rem 0;	
+		}
+		
+		.feature--block{
+			padding-left: 1rem;
+			
+			h4{
+				font-size: 1.4rem;
+				padding-right: 20%;
+			}
+			
+			p{
+				font-size: 1.2rem;
+			}
 		}
 	}
 }
@@ -167,6 +271,14 @@
 					font-size: 1.1rem;
 				}
 			}
+		}
+	}
+
+	@media only screen and (min-width: 48.063em) {
+		
+		h4{
+			font-size: 1.4rem;
+			padding: 1rem 0;
 		}
 	}
 }
