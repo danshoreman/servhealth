@@ -22,7 +22,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/urgent-messaging.jpg" class="" alt="Messaging too important to be ignored">
 			</div>
 			<div class="small-12 medium-6 columns text-col">
 				<p class="first">When the systems that run the business run into trouble, people need to know about it. It's something that's just too important to be ignored.</p>
@@ -84,7 +84,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 medium-push-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/cloud.jpg" class="" alt="In the cloud">
 			</div>
 			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">
@@ -96,7 +96,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/location-specific.jpg" class="" alt="Location specific alerting">
 			</div>
 			<div class="small-12 medium-6 columns">
 				<div class="block feature--block">
@@ -108,7 +108,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 medium-push-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/a-problem-halved.jpg" class="" alt="A problem halved">
 			</div>
 			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">
@@ -120,7 +120,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/on-your-users-terms.jpg" class="" alt="A problem halved">
 			</div>
 			<div class="small-12 medium-6 columns">
 				<div class="block feature--block">
@@ -132,7 +132,7 @@
 		
 		<div class="row">
 			<div class="small-12 medium-6 medium-push-6 columns">
-				<img src="http://placehold.it/450x300" class="" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/general/happy-users.jpg" class="" alt="Happy users">
 			</div>
 			<div class="small-12 medium-6 medium-pull-6 columns">
 				<div class="block feature--block">

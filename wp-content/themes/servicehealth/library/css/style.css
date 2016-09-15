@@ -1735,7 +1735,7 @@ h5, .h5 {
 }
 
 .page-header .main-logo img {
-  width: 80px;
+  width: 100px;
 }
 
 @media only screen and (min-width: 48.063em) {
@@ -1743,7 +1743,7 @@ h5, .h5 {
     margin-left: 2rem;
   }
   .page-header .main-logo img {
-    width: 100px;
+    width: 120px;
   }
 }
 
