@@ -26,7 +26,7 @@
 			</div>
 			<div class="small-12 medium-6 columns text-col">
 				<p class="first">When the systems that run the business run into trouble, people need to know about it. It's something that's just too important to be ignored.</p>
-				<p>And yet somehow they are.</p>
+				<p>And yet somehow it is.</p>
 			</div>
 		</div>
 		
@@ -178,9 +178,7 @@
 					
 					<p><strong>Up to 3 users<br> + Creator Licence</strong></p>
 					
-					<p><strong>Free</strong> – 10 email and 10 SMS text messages.</p>
-					
-					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
+					<p><strong>Free</strong> – 10 email <br>and 10 SMS text <br>messages.</p>
 					
 					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Free Trial Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
@@ -193,8 +191,6 @@
 					
 					<p>£2.00 Per Seat Per Month – Text, SMS + Windows Pop Up.<br></p>
 					
-					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
-					
 					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Team Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
@@ -205,8 +201,6 @@
 					<p><strong>51 to 999 users<br> + Creator Licence</strong></p>
 					
 					<p>£1.50 Per Seat Per Month<br>Text, SMS + Windows Pop Up.</p>
-					
-					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
 					
 					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Business Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
@@ -219,12 +213,12 @@
 					
 					<p>£1.25 Per User<br>Text, SMS + Windows Pop Up.</p>
 					
-					<p>Additional SMS messages invoiced monthly in arrears @ 0.033pence per message sent.</p>
-					
 					<a href="mailto:info@servicehealth.co.uk?subject=Service Health Enterprise Enquiry" class="btn btn-pricing">Enquire Now</a>
 				</div>
 			</div>
 			</div>
+		
+		<p class="center disclaimer">Additional sms pricing may apply. Contact us for more details.</p>
 		</div>
 	</section>
 	
