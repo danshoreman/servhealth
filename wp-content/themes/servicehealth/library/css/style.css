@@ -1750,11 +1750,11 @@ h5, .h5 {
 .hero--panel {
   height: 350px;
   width: 100%;
-  background: url(../images/general/hero-image.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center;
   position: relative;
 }
 
@@ -1885,7 +1885,7 @@ h5, .h5 {
   .intro--panel p {
     font-size: 1.3rem;
   }
-  .intro--panel p.first {
+  .intro--panel .text-col p:first-of-type {
     margin-top: 2em;
   }
 }
@@ -1909,7 +1909,7 @@ h5, .h5 {
     margin-left: 1em;
     margin-right: 2em;
   }
-  .intro--panel p.first {
+  .intro--panel .text-col p:first-of-type {
     margin-top: 4em;
   }
 }
@@ -2090,6 +2090,18 @@ h5, .h5 {
 
 .panel--examples {
   background: #41e3aa;
+}
+
+.panel--pricing .row div:nth-child(2) .block--pricing {
+  border-top: 10px solid #41e3aa;
+}
+
+.panel--pricing .row div:nth-child(3) .block--pricing {
+  border-top: 10px solid #e76fbb;
+}
+
+.panel--pricing .row div:nth-child(4) .block--pricing {
+  border-top: 10px solid #6fc9e7;
 }
 
 .panel--pricing .block {
