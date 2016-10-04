@@ -1,7 +1,4 @@
 
-.panel{
-	
-}
 
 .page-header{
 	position: absolute;
@@ -135,6 +132,7 @@
 }
 
 .intro--panel{
+	overflow: hidden;
 	
 	h2, h3{
 		text-align: center;
@@ -262,13 +260,11 @@
 }
 
 .panel--full--width{
-	background: url(../images/general/laptop-sm.jpg) center center no-repeat $bg-light;
 	@include back-size(cover);
 	width: 100%;
 	height: 210px;
 	
 	@media only screen and (min-width: 48.063em) {
-		background: url(../images/general/laptop.jpg) center center no-repeat $bg-light;
 		@include back-size(cover);
 		height: 350px;
 	}
@@ -471,6 +467,21 @@
 		}
 	}
 }
+
+// animations
+
+.os-animation,
+.staggered-animation01,
+.staggered-animation02{
+  opacity: 0;
+}
+ 
+.os-animation.animated,
+.staggered-animation01.animated
+.staggered-animation02.animated{
+    opacity: 1;
+}
+
 
 
 /* min-width 641px */

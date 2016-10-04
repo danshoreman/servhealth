@@ -1848,6 +1848,10 @@ h5, .h5 {
   }
 }
 
+.intro--panel {
+  overflow: hidden;
+}
+
 .intro--panel h2, .intro--panel h3 {
   text-align: center;
   font-size: 1rem;
@@ -1972,7 +1976,6 @@ h5, .h5 {
 }
 
 .panel--full--width {
-  background: url(../images/general/laptop-sm.jpg) center center no-repeat #eff1f2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1983,7 +1986,6 @@ h5, .h5 {
 
 @media only screen and (min-width: 48.063em) {
   .panel--full--width {
-    background: url(../images/general/laptop.jpg) center center no-repeat #eff1f2;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2177,6 +2179,18 @@ h5, .h5 {
   background: #41e3aa;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.os-animation,
+.staggered-animation01,
+.staggered-animation02 {
+  opacity: 0;
+}
+
+.os-animation.animated,
+.staggered-animation01.animated
+.staggered-animation02.animated {
+  opacity: 1;
 }
 
 /* min-width 641px */

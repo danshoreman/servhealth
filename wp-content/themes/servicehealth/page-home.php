@@ -7,7 +7,7 @@
 	
 ?>
 
-	<section class="panel hero--panel" <?php if($image_url) : ?>style="background-image:url(<?php echo $image_url[0]; ?>); " <?php endif; ?>>
+	<section class="panel hero--panel" <?php if($image_url) : ?>data-parallax="scroll" data-image-src="<?php echo $image_url[0]; ?>" <?php endif; ?>>
 		<div class="row">
 			<div class="small-12 columns">
 				<h1><?php the_title(); ?></h1>
@@ -27,11 +27,11 @@
 		</div>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns">
+			<div class="small-12 medium-6 columns os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
 				<?php $img_benefit = wp_get_attachment_image_src(get_field('introduction_image'), 'full'); ?>
 				<img src="<?php echo $img_benefit[0]; ?>" class="" alt="<?php echo get_the_title(get_field('introduction_image')); ?>">
 			</div>
-			<div class="small-12 medium-6 columns text-col">
+			<div class="small-12 medium-6 columns text-col os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 				<?php the_field('introduction_copy'); ?>
 			</div>
 		</div>
@@ -50,16 +50,32 @@
 			
 			<?php if( have_rows('description_steps') ): ?>
 
-				<div class="row">
-			
-				<?php $i = 0;
-					while( have_rows('description_steps') ): the_row(); 
-			
-					$reason = get_sub_field('reason');
-					$i++; ?>
-			
-					<div class="small-12 medium-4 columns">
-						<p class="reason reason<?php echo $i; ?>"><?php echo $reason; ?></p>
+				<div class="row staggered-animation-container01">
+					<?php
+						$counter = 0;
+						while( have_rows('description_steps') ): the_row(); 
+						$reason = get_sub_field('reason');
+						$counter++;
+	
+						switch ( $counter ) {
+					
+							case 1: 
+								echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">';
+								break;
+					
+							case 2: 
+								echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">';
+								break;
+					
+							case 3: 
+							 	echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.6s">';
+					
+								break;
+						}	
+						
+					?>
+					
+						<p class="reason reason<?php echo $counter; ?>"><?php echo $reason; ?></p>
 					</div>
 			
 				<?php endwhile; ?>
@@ -85,12 +101,12 @@
 	</section>
 	
 	<?php $img_full = wp_get_attachment_image_src(get_field('full_width_image'), 'full');	?>
-	<section class="panel panel--full--width" <?php if($img_full) : ?>style="background-image:url(<?php echo $img_full[0]; ?>); " <?php endif; ?>>
+	<section class="panel panel--full--width" <?php if($img_full) : ?>data-parallax="scroll" data-image-src="<?php echo $img_full[0]; ?>" <?php endif; ?>>
 		
 	</section>
 	
 	<section id="features" class="panel panel--features">
-		<header class="panel-header center">
+		<header class="panel-header center notify">
 			<h3><?php the_field('features_title'); ?></h3>
 			<?php the_field('features_copy'); ?>
 		</header>
@@ -108,14 +124,14 @@
 				
 				?>
 		
-				<div class="row">
+				<div class="row os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">
 					
 					<?php if ($counter % 2 === 0) :?>
 					<div class="small-12 medium-6 medium-push-6 columns">
 					<?php else: ?>
 					<div class="small-12 medium-6 columns">
 					<?php endif; ?>
-						<img src="<?php echo $img_feature[0]; ?>" class="" alt="<?php echo get_the_title(get_field('introduction_image')); ?>">
+						<img src="<?php echo $img_feature[0]; ?>" alt="<?php echo get_the_title(get_field('introduction_image')); ?>">
 					</div>
 					<?php if ($counter % 2 === 0) :?>
 					<div class="small-12 medium-6 medium-pull-6 columns">
@@ -135,52 +151,58 @@
 		<?php endif; ?>
 		
 	</section>
-	<!--
-	<section class="panel panel--examples">
-		<div class="row">
-			<div class="small-12 columns">
-				
-				<ul class="carousel">
-					<li>
-						<img src="http://placehold.it/250x150" class="" alt="">
-						<h5>Example 01</h5>
-						<p>Email is down at our London Park Gate office. This is the result of a BT issue – we are investigating and will update you as soon as we can.</p></li>
-					<li>
-						<img src="http://placehold.it/250x150" class="" alt="">
-						<h5>Example 02</h5>
-						<p>Email is down at our London Park Gate office. This is the result of a BT issue – we are investigating and will update you as soon as we can.</p></li>
-					<li>
-						<img src="http://placehold.it/250x150" class="" alt="">
-						<h5>Example 03</h5>
-						<p>Email is down at our London Park Gate office. This is the result of a BT issue – we are investigating and will update you as soon as we can.</p></li>
-				</ul>
-				
-			</div>
-		</div>
-	</section>
-	-->
 	<section id="pricing" class="panel panel--pricing">
 		<h4 class="center"><?php the_field('pricing_title'); ?></h4>
 		
-		<?php if( have_rows('pricing_block') ): ?>
+		<?php 
+			
+			if( have_rows('pricing_block') ): ?>
 
-			<div class="row">
+			<div class="row staggered-animation-container02">
 		
-			<?php $i = 0;
+			<?php 
+				$counter = 0;
+				
 				while( have_rows('pricing_block') ): the_row(); 
 		
 				$price_title = get_sub_field('price_title');
 				$price_text = get_sub_field('text_area');
-				$i++; ?>
-		
-				<div class="small-12 medium-6 large-3 columns">
+				?>
+				
+				<?php
+					
+					$counter++;
+
+					switch ( $counter ) {
+				
+						case 1: 
+							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">';
+							break;
+				
+						case 2: 
+							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">';
+							break;
+				
+						case 3:
+							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.6s">';
+							break;
+				
+						case 4: 
+						 	echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.8s">';
+				
+							break;
+					}	
+					
+				?>
+					
 					<div class="block block--pricing block--pricing--free">
 						<h6><?php echo $price_title; ?></h6>
 						<?php echo $price_text; ?>
 					</div>
 				</div>
 		
-			<?php endwhile; ?>
+			<?php
+				endwhile; ?>
 		
 			</div>
 		
