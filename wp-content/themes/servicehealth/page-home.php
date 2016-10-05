@@ -7,7 +7,7 @@
 	
 ?>
 
-	<section class="panel hero--panel" <?php if($image_url) : ?>data-parallax="scroll" data-image-src="<?php echo $image_url[0]; ?>" <?php endif; ?>>
+	<section class="panel hero--panel" <?php if($image_url) : ?> style="background-image: url(<?php echo $image_url[0]; ?>);" <?php endif; ?>>
 		<div class="row">
 			<div class="small-12 columns">
 				<h1><?php the_title(); ?></h1>
@@ -55,24 +55,12 @@
 						$counter = 0;
 						while( have_rows('description_steps') ): the_row(); 
 						$reason = get_sub_field('reason');
-						$counter++;
-	
-						switch ( $counter ) {
-					
-							case 1: 
-								echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">';
-								break;
-					
-							case 2: 
-								echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">';
-								break;
-					
-							case 3: 
-							 	echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="0.6s">';
-					
-								break;
-						}	
 						
+						$counter++;
+						$delay = 0.2;
+					
+						echo '<div class="small-12 medium-4 columns staggered-animation01" data-os-animation="fadeInUp" data-os-animation-delay="'.( $counter * $delay ).'s">';
+	
 					?>
 					
 						<p class="reason reason<?php echo $counter; ?>"><?php echo $reason; ?></p>
@@ -172,27 +160,10 @@
 				<?php
 					
 					$counter++;
-
-					switch ( $counter ) {
-				
-						case 1: 
-							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.2s">';
-							break;
-				
-						case 2: 
-							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.4s">';
-							break;
-				
-						case 3:
-							echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.6s">';
-							break;
-				
-						case 4: 
-						 	echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="0.8s">';
-				
-							break;
-					}	
+					$delay = 0.2;
 					
+					echo '<div class="small-12 medium-6 large-3 columns staggered-animation02" data-os-animation="fadeInUp" data-os-animation-delay="'.( $counter * $delay ).'s">';
+
 				?>
 					
 					<div class="block block--pricing block--pricing--free">

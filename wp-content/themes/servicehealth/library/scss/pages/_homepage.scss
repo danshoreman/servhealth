@@ -468,22 +468,6 @@
 	}
 }
 
-// animations
-
-.os-animation,
-.staggered-animation01,
-.staggered-animation02{
-  opacity: 0;
-}
- 
-.os-animation.animated,
-.staggered-animation01.animated
-.staggered-animation02.animated{
-    opacity: 1;
-}
-
-
-
 /* min-width 641px */
 @media only screen and (min-width: 40.063em) {
 

@@ -9,10 +9,8 @@ function scripts_and_styles() {
     wp_enqueue_script( 'jquery' );
     
     wp_register_style( 'respgrid', get_template_directory_uri() . '/library/css/foundation.min.css', array(), '6.0', 'all' );
-		wp_register_style( 'animate', get_template_directory_uri() . '/library/css/animate.css', array(), '3.5.1', 'all' );
 		wp_register_style( 'stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '1.0.0', 'all' );
 		wp_enqueue_style( 'respgrid' );
-		wp_enqueue_style( 'animate' );
 		wp_enqueue_style( 'stylesheet' );
 		
     
