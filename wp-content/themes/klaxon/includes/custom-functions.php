@@ -29,17 +29,5 @@ function scripts_and_styles() {
 /* Enqueue base scripts and styles */
 add_action('wp_enqueue_scripts', 'scripts_and_styles', 999);
 
-
-
-/* Enqueue google fonts */
-function google_fonts() {
-  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-  wp_enqueue_style( 'googleFonts');
-}
-
-add_action('wp_print_styles', 'google_fonts');
-
-
-
 /* Hide Admin Bar */
 show_admin_bar( false );

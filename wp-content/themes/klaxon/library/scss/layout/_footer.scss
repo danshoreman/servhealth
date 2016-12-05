@@ -1,0 +1,58 @@
+
+
+/* Footer */
+.page-footer{
+	background: $lgrey;
+	padding: 1rem 0;
+	text-align: center;
+	
+	p{
+		margin: 0;
+		
+		a{
+			color: $text;
+			
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 48.063em) {
+
+		p.copyright{
+			display: inline;
+			float: left;
+		}
+			
+		p.terms{
+			display: inline;
+			float: right;
+		}
+	}
+}
+
+
+
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

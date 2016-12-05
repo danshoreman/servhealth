@@ -27,9 +27,29 @@
 		</div>
 		
 		<div class="row">
-			<div class="small-12 medium-6 columns os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">
-				<?php $img_benefit = wp_get_attachment_image_src(get_field('introduction_image'), 'full'); ?>
-				<img src="<?php echo $img_benefit[0]; ?>" class="" alt="<?php echo get_the_title(get_field('introduction_image')); ?>">
+			<div class="small-12 medium-6 columns os-animation">
+			<style>
+					.embed-container { 
+						position: relative; 
+						padding-bottom: 56.25%;
+						height: 0;
+						overflow: hidden;
+						max-width: 100%;
+						height: auto;
+					} 
+				
+					.embed-container iframe,
+					.embed-container object,
+					.embed-container embed { 
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}</style>
+				<div class="embed-container">
+					<?php the_field('introduction_image'); ?>
+				</div>
 			</div>
 			<div class="small-12 medium-6 columns text-col os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.2s">
 				<?php the_field('introduction_copy'); ?>

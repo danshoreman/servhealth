@@ -83,7 +83,7 @@
             "key": "field_57e2d06495982",
             "label": "Introduction Image",
             "name": "introduction_image",
-            "type": "image",
+            "type": "oembed",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -92,16 +92,8 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "id",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "width": "",
+            "height": ""
         },
         {
             "key": "field_57e2d08695983",
@@ -563,5 +555,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1474582183
+    "modified": 1478122948
 }
